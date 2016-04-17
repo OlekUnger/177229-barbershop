@@ -13,11 +13,11 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="text.html">Прайс-лист</a></li>
-					<li class="active"><a href="index-catalog.html">Магазин</a></li>
+					<li class="main-navigation active"><a href="index-catalog.html">Магазин</a></li><!--добавлен префикс к активному состоянию-->
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
-			<div class="user-block"><a href="#" class="login">Вход</a></div>	
+			<a class="user-block" href="#" class="login">Вход</a>	
 		</div>
 	</header>
 	<main class="container">
@@ -27,10 +27,10 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html"></a>Магазин</li>
 				<li><a href="index-catalog.html">Средства для ухода</a></li>
-				<li class="current">Набор для путушествий &laquo;baxter of california&raquo;</li>
+				<li>Набор для путушествий &laquo;baxter of california&raquo;</li>
 			</ul>
 		</div>
-		<article class="item-page">
+		<div class="item-page"><!--сменил article на div-->
 			<section class="item-view left">
 				<div class="main-item-view"><img src="#" alt=""></div>
 				<div class="mini-item-view">
@@ -41,7 +41,8 @@
 			</section>
 			<section class="item-description right">
 				<div class="descr-text">
-					<p>есть в наличии</p><p class="right">артикул:dexter-ae</p>
+					<span class="left">есть в наличии</span>
+					<span class="right">артикул:dexter-ae</span><!--заменил p на span-->
 					<p>travel kit- необходимый аксуссуар во время любого
 					   путушествия.В аккуратной кожаной сумке находится все, что
 					   нужно для бритья и ухода за кожей во время рабочей поездки
@@ -54,19 +55,17 @@
 					</div>
 				</div>
 				<div class="descr-content">
-					<fieldset class="content">
-						<legend>в набор входят:</legend>
-							<ul>
+						<h3>в набор входят:</h3><!--убрал fieldset-->
+							<ul class="content"><!--добавил класс-->
 								<li>средство для умывания (50мл)</li>
 								<li>увлажняющий крем (50мл)</li>
 								<li>крем для бритья (50 мл)</li>
 								<li>крем после бритья, шампунь (50 мл)</li>
 								<li>удобная кожаная косметичка</li>
 							</ul>
-					</fieldset>
 				</div>
 			</section>
-		</article>
+		</div>
 	</main>
 	<footer class="main-footer">
 		<div class="container clearfix">
@@ -78,9 +77,9 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<a href="#" class="social-btn-vk">Вконтакте</a>
-				<a href="#" class="social-btn-fb">Фейсбук</a>
-				<a href="#" class="social-btn-inst">Инстаграмм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a><!--кнопкам добавлен второй класс-->
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 			</section>
 			<section class="footer-copiright">
 				<p>Разработано:</p>

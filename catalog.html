@@ -13,20 +13,20 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="text.html">Прайс-лист</a></li>
-					<li class="active"><a href="index-catalog.html">Магазин</a></li>
+					<li class="main-navigation active"><a href="index-catalog.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
-			<div class="user-block"><a href="#" class="login">Вход</a></div>	
+				<a class="user-block" href="#" class="login">Вход</a><!--убрал обертку-->
 		</div>
 	</header>
-	<main class="container">
+	<main class="inner-page container"><!--добавил модификатор внутренней страницы-->
 		<div class="catalog-title">
 		<h2>средства для ухода</h2>
 			<ul class="breadcrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html"></a>Магазин</li>
-				<li class="current">Средства для ухода</li>
+				<li >Средства для ухода</li><!--убрал общий класс-->
 			</ul>
 		</div>
 		<div class="catalog-section left">
@@ -53,22 +53,22 @@
 				</fieldset>
 				<fieldset class="group">
 					<legend>групы товаров:</legend>
-						<input id="check-7" type="checkbox" name="group" value="бритвенные принадлежности">
+						<input id="check-7" type="radio" name="group" value="shaving"><!--заменил checkbox на radio-->
 						<lable for="check-7">бритвенные принадлежности</lable>
 
-						<input id="check-8" type="checkbox" name="group" value="средства для ухода" checked>
+						<input id="check-8" type="radio" name="group" value="care" checked><!--убрал русский текст из value-->
 						<lable for="check-8">средства для ухода</lable>
 						
-						<input id="check-9" type="checkbox" name="group" value="аксессуары">
+						<input id="check-9" type="radio" name="group" value="accessory">
 						<lable for="check-9">аксессуары</lable>
 				</fieldset>
-				<button class="btn" href="#">показать</button>
+				<button class="btn" type="submit">показать</button><!--убрал href у button-->
 			</form>
 		</div>
 		<div class="catalog-section right">
-			<section class="item">
-				<a href="catalog-item.html">
-					<img src="#" alt="">
+			<article class="item"><!--поменял section на article-->
+				<a href="catalog-item.html"><img src="#" alt=""></a><!--отдельные ссылки для изобр и текста-->
+				<a href="catalog-item.html">	
 					<span>Набор для путешествий<br>
 					&laquo;baxter of california&raquo;</span>
 				</a>
@@ -76,10 +76,10 @@
 					<span class="price">2900 руб.</span>
 					<a class="btn btn-buy" href="#">купить</a>
 				</div>	
-			</section>	
-			<section class="item">
-				<a href="catalog-item.html">
-					<img src="#" alt="">
+			</article>	
+			<article class="item">
+				<a href="catalog-item.html"><img src="#" alt=""></a>
+				<a href="catalog-item.html">	
 					<span>Увлажняющий кондиционер<br>
 					&laquo;baxter of california&raquo;</span>
 				</a>	
@@ -87,10 +87,10 @@
 					<span class="price">750 руб.</span>
 					<a class="btn btn-buy" href="#">купить</a>
 				</div>
-			</section>	
-			<section class="item">
-				<a href="catalog-item.html">
-					<img src="#" alt="">
+			</article>	
+			<article class="item">
+				<a href="catalog-item.html"><img src="#" alt=""></a>
+				<a href="catalog-item.html">	
 					<span>Гель для волос<br>
 					&laquo;suavecito&raquo;</span>
 				</a>
@@ -98,10 +98,10 @@
 					<span class="price">290 руб.</span>
 					<a class="btn btn-buy" href="#">купить</a>
 				</div>
-			</section>
-			<section class="item">
-				<a href="catalog-item.html">
-					<img src="#" alt="">
+			</article>
+			<article class="item">
+				<a href="catalog-item.html"><img src="#" alt=""></a>
+				<a href="catalog-item.html">	
 					<span>Глина для укладки волос<br>
 					&laquo;american crew&raquo;</span>
 				</a>
@@ -109,10 +109,10 @@
 					<span class="price">500 руб.</span>
 					<a class="btn btn-buy" href="#">купить</a>
 				</div>
-			</section>
-			<section class="item">
-				<a href="catalog-item.html">
-					<img src="#" alt="">
+			</article>
+			<article class="item">
+				<a href="catalog-item.html"><img src="#" alt=""></a>
+				<a href="catalog-item.html">	
 					<span>Гель дл яволос<br>
 					&laquo;american crew&raquo;</span>
 				</a>
@@ -120,10 +120,10 @@
 					<span class="price">300 руб.</span>
 					<a class="btn btn-buy" href="#">купить</a>
 				</div>	
-			</section>
-			<section class="item">
-				<a href="catalog-item.html">
-					<img src="#" alt="">
+			</article>
+			<article class="item">
+				<a href="catalog-item.html"><img src="#" alt=""></a>
+				<a href="catalog-item.html">	
 					<span>Набор для бритья<br>
 					&laquo;baxter of california&raquo;</span>
 				</a>
@@ -131,12 +131,12 @@
 					<span class="price">3900 руб.</span>
 					<a class="btn btn-buy" href="#">купить</a>
 				</div>
-			</section>	
+			</article>	
 			<div class="pagination">
-				<a class="btn" href="#">1</a>
-				<span>2</span>
-				<a class="btn" href="#">3</a>
-				<a class="btn" href="#">4</a>
+				<a class="btn pag" href="#">1</a><!--добавлен стилизующий класс pag-->
+				<span class="btn pag current">2</span><!--добавлено активное состояние-->
+				<a class="btn pag" href="#">3</a>
+				<a class="btn pag" href="#">4</a>
 			</div>
 		</div>
 	</main>
@@ -150,9 +150,9 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<a href="#" class="social-btn-vk">Вконтакте</a>
-				<a href="#" class="social-btn-fb">Фейсбук</a>
-				<a href="#" class="social-btn-inst">Инстаграмм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 			</section>
 			<section class="footer-copiright">
 				<p>Разработано:</p>
