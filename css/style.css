@@ -1,0 +1,17 @@
+html,
+body {
+	font-size: 14px;
+	line-height: 24px;
+	color: black;
+	font-weight: 700;
+  font-family: PTSans;
+  text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 42px;
+	color: black;
+	font-weight: 700;
+	font-family: PTSans;
+}
