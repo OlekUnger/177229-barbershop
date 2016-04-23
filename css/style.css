@@ -1,5 +1,7 @@
 html,
 body {
+	margin: auto;
+	padding: 0;
 	font-size: 14px;
 	line-height: 24px;
 	color: black;
@@ -8,10 +10,159 @@ body {
   text-transform: uppercase;
 }
 
+.clearfix:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.left {float: left;}
+.right {float: right;}
+
+
 h2 {
 	font-size: 30px;
 	line-height: 42px;
 	color: black;
 	font-weight: 700;
 	font-family: PTSans;
+}
+
+.container {
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.main-header.inner {
+	margin-bottom: 55px;
+	outline: solid black 1px;
+}
+
+.main-navigation {
+	width:780px;
+	outline: solid green 1px;
+}
+
+.header-logo {
+	display: inline-block;
+	width:111px;
+	height:70px;
+	margin-right: 20px;
+	outline:solid red 1px;
+}
+
+.main-navigation ul {
+	float:left;
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align:top;
+}
+
+.user-block {
+	display: inline-block;
+	width:140px;
+	height: 70px;
+	outline:solid red 1px;
+}
+
+.catalog-title {
+		min-height: 66px;
+		margin-bottom: 58px;
+		outline:solid orange 1px;
+}
+
+.breadcrumbs li {
+	display: inline;
+}
+
+.catalog-section.left {
+	width: 220px;
+	min-height: 570px;
+	outline:solid red 1px;
+}
+
+.catalog-section.right {
+	width: 700px;
+	outline:solid red 1px;
+}
+
+.item {
+	display: inline-block;
+	float: left;
+	width: 220px;
+	height: 286px;
+	margin-bottom:20px;
+	margin-right: 20px;
+	outline: solid blue 1px;
+}
+
+.item:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+.main-footer {
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  outline: solid green 1px;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin-right: 80px;
+  min-height: 90px;
+  outline: solid red 1px;
+}
+
+.footer-social {
+  width: 160px;
+  min-height: 90px;
+   outline: solid red 1px;
+}
+
+.footer-copyright {
+  width: 180px;
+  min-height: 90px;
+  outline: solid red 1px;
+}
+
+.item-page {
+	outline: solid orange 1px;
+}
+
+.item-view.left {
+	width: 460px;
+	outline: solid red 1px;
+}
+
+.main-item-view {
+	width: 460px;
+	height: 498px;
+	margin-bottom: 21px;
+	outline: solid grey 1px;
+}
+
+.mini-img {
+	float:left;
+	display: inline-block;
+	width: 140px;
+	height: 149px;
+	margin-right: 20px;
+	outline: solid grey 1px;
+}
+
+.mini-img:last-child {
+	margin-right:0;
+}
+
+.item-description.right {
+	width:390px;
+	outline: solid red 1px;
 }
