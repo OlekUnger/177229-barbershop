@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>barber-shop</title>
 	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+  <link rel="stylesheet" href="css/normalise.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header inner">
 		<div class="container clearfix">		
 			<nav class="main-navigation left">
@@ -14,11 +16,13 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="text.html">Прайс-лист</a></li>
-					<li class="main-nav active"><a href="index-catalog.html">Магазин</a></li>
+					<li class="main-nav-active"><a href="index-catalog.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
-			<a class="user-block right" href="#" class="login">Вход</a>	
+			<div class="user-block right">
+			<a class="login" href="#">Вход</a>
+			</div>	
 		</div>
 	</header>
 	<main class="main-page container clearfix">
@@ -28,7 +32,7 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="catalog.html">Средства для ухода</a></li>
-				<li>Набор для путушествий &laquo;baxter of california&raquo;</li>
+				<li class="current">Набор для путушествий &laquo;baxter of california&raquo;</li>
 			</ul>
 		</div>
 		<div class="item-page">
@@ -42,12 +46,13 @@
 			</section>
 			<section class="item-description right">
 				<div class="descr-text">
-					<span class="left">есть в наличии</span>
-					<span class="right">артикул:dexter-ae</span>
+					<div class="article">
+					<span>есть в наличии</span>
+					<span class="right">артикул:dexter-ae</span></div>
 					<p>travel kit- необходимый аксуссуар во время любого
 					   путушествия.В аккуратной кожаной сумке находится все, что
 					   нужно для бритья и ухода за кожей во время рабочей поездки
-					   или отдыхаЖ средство для умывания, увлажняющий крем, крем
+					   или отдыха: средство для умывания, увлажняющий крем, крем
 					   для бритья, крем после бритья, шампунь. Набор также может
 					   стать отичным подарком.</p>
 					 <div class="order">
@@ -84,7 +89,7 @@
 			</section>
 			<section class="footer-copyright right">
 				<p>Разработано:</p>
-				<a class="btn"href="https://htmlacademy.ru"></a>
+				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
 			</section>
 		</div>
 	</footer>
